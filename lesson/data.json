@@ -1,0 +1,28 @@
+[
+    {
+      "name": "John",
+      "age": 25,
+      "job": "Сourier"
+    },
+    {
+      "name": "Jane",
+      "age": 26,
+      "job": "Designer"
+    },
+    {
+        "name": "Anna",
+        "age": 29,
+        "job": "Salesman"
+    },
+    {
+        "name": "Dua Lipa",
+        "age": 27,
+        "job": "Singer"
+    },
+      {
+        "name": "Leonardo DiCaprio",
+        "age": 49,
+        "job": "Actress"
+    }
+  ]
+  
