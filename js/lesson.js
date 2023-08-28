@@ -186,7 +186,7 @@ converter(eur, som, 'som');
     })
     .catch(error => {
         console.error(error);
-});
+})
 
 
 const card = document.querySelector('.card');
