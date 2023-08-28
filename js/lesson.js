@@ -222,7 +222,7 @@ fetchData(count);
          <p>${data.title}</p>
          <p style="color: ${data.completed ? 'green' : 'red'};">${data.completed}</p>
          <span>${data.id}</span>
-                        `;
-        });
+         `;
+    1});
 }
             
