@@ -29,15 +29,12 @@
 //       name: "John Doe",
 //       age: 30,
 //       job: "Developer",
-//       imageUrl: "john.jpg"
 //     },
 //     {
 //       name: "Jane Smith",
 //       age: 28,
 //       job: "Designer",
-//       imageUrl: "jane.jpg"
 //     },
-//     // Добавьте других людей по аналогии
 //   ];
   
 //   const container = document.getElementById("people-container");

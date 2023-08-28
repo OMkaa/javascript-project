@@ -36,6 +36,28 @@ function scrollAuto(){
 window.addEventListener('scroll' , scrollAuto)
 
 
+//post data
 
+const form = document.querySelector('form')
 
+const postData = (form) => {
+    form.addEventListener('sumbit', (event) => {
+        event.preventDefault()
+        const request = new XMLHttpRequest()
+        request.open("POST" , "server.php")
+        request.setRequestHeader("Content-type","application/json")
 
+        const formData = new FormData(form)
+        const obj = {}
+        formData.forEach((item, i) => {
+            obj[i] = item
+        })
+        const json = JSON.stringify(obj)
+
+        request.send()
+        request.onload = () => {
+            console.log(request.response);
+        }
+    })
+}
+postData(form)

@@ -75,4 +75,103 @@ prev.onclick = () => {
 autoSlider(index)
 
 
-console.log('Hui')
+// setTimeout(() =>{
+//     let num = 0 
+//     console.log(num);
+//     setTimeout(() =>{
+//         console.log(num +10);
+//         setTimeout(() =>{
+//             console.log(ten);
+// }, 2000)
+// }, 3000)
+// }, 3000)
+
+// console.log('Loading...');
+
+// setTimeout(() =>{
+//     const product = {
+//         name: 'milk',
+//         price: '$6'
+//     }
+//     console.table(product);
+//     console.log('1 step');
+//     setTimeout(() =>{
+//         product.price = '$8'
+//         console.table(product);
+//         console.log('2 step');
+//     },2000)
+// },1000)
+
+
+
+//Promise 
+// console.log('Loading...')
+
+// const promiseVariable = new Promise((resole ,reject) => {
+//     setTimeout(() =>{
+//         const product = {
+//             name: 'milk',
+//             price: '$6'
+//         }
+//         console.log('1 step');
+//         console.table(product);
+//         resole(product)
+//         reject()
+//     }, 2000)
+// })
+
+// const resoleData = (product) => {
+//     setTimeout (() => {
+//         product.price = '$8'
+//         console.table(product);
+//         console.log('2 step');
+//     }, 1000)
+// }
+
+// const rejectData = (() => {
+//     return console.error('ERROR! PROMISE IS NOT RESELVED');
+// })
+
+// promiseVariable.then(resoleData, rejectData)
+
+// const promiseVariable = new Promise((resole) => {
+//         setTimeout(() =>{
+//             const product = {
+//                 name: 'milk',
+//                 price: '$6'
+//             }
+//             console.log('1 step');
+//             console.table(product);
+//             resole(product)
+//         }, 2000)
+//     })
+
+// promiseVariable.then((product) => {
+//     return new Promise( () =>{
+//         setTimeout(() => {
+//             product.soldOut =true
+//             console.log('2 step');
+//             console.table(product);
+//         },2000)
+//     })
+// }).then((product) =>{
+//     setTimeout(() =>{
+//         product.soldOut = false
+//         product.price = '$10'
+//         console.log('3 step');
+//         console.table(product);
+//     }, 4000)
+// }).catch(() =>{
+//     return console.log('error');
+// }).finally(() =>{
+//     console.log('Finally');
+// })
+
+//fetch(), api
+
+// fetch('https://jsonplaceholder.typicode.com/todos/100',{
+//     method:"GET",
+//     headers:{"Content-type": "application/json"},
+// })
+// .then((response) => response.json())
+// .then((data) => console.log(data))
