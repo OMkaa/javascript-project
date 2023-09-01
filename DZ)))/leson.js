@@ -82,3 +82,12 @@ request.onload = function () {
   } 
 };
 
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+
+const fetchData = async () => {
+  const response = await fetch(url)
+  const data = await response.json()
+  
+}
+fetchData()
+

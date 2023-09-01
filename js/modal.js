@@ -27,13 +27,29 @@ function modalShow(){
 modalShow()
 
 
-function scrollAuto(){
-    if ((window.scrollY +window.innerHeight) >= document.body.offsetHeight){
-        openModal()
-        window.removeEventListener('scroll' , scrollAuto)
+// function scrollAuto(){
+//     if ((window.scrollY +window.innerHeight) >= document.body.offsetHeight){
+//         openModal()
+//         window.removeEventListener('scroll' , scrollAuto)
+//     }
+// }
+// window.addEventListener('scroll' , scrollAuto)
+
+function scrollAuto() {
+    const windowHeight = window.innerHeight;
+    const documentHeight = Math.max(
+      document.body.scrollHeight, 
+      document.documentElement.scrollHeight
+    );
+  
+    if (window.scrollY + windowHeight >= documentHeight) {
+      openModal();
+      window.removeEventListener('scroll', scrollAuto);
     }
-}
-window.addEventListener('scroll' , scrollAuto)
+  }
+  
+  window.addEventListener('scroll', scrollAuto);
+  
 
 
 //post data
